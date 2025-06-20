@@ -6,6 +6,7 @@ from app.routes.auth_routes import auth_bp
 from app.routes.signup_routes import signup_bp
 from app.routes.populationMasterRoute import population_percentage_bp
 from app.routes.user_details_route import userdetails_bp
+from app.routes.ai_route import ai_bp
 
 
 
@@ -18,6 +19,7 @@ app.register_blueprint(signup_bp)
 app.register_blueprint(population_bp)
 app.register_blueprint(population_percentage_bp)
 app.register_blueprint(userdetails_bp)
+app.register_blueprint(ai_bp)
 
 
 if __name__ == '__main__':
